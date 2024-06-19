@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --legacy-peer-deps && gatsby build"
+  command = "nvm install 18 && npm install --legacy-peer-deps && gatsby build"
   publish = "public"
   functions = "functions"  # Adjust if you have serverless functions
   
@@ -13,7 +13,7 @@
 # Optional settings for headers, redirects, etc.
 [build.environment]
   # Example: Setting environment variables during build
-  NODE_VERSION = "14"
+  NODE_VERSION = "18"
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"
