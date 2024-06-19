@@ -2,13 +2,16 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import { Container } from 'react-bootstrap';
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="flex-1">
-        {children}
+      <main className="flex-grow-1">
+        <Container>
+          {children}
+        </Container>
       </main>
       <Footer />
     </div>

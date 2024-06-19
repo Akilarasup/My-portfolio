@@ -1,21 +1,25 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'gatsby';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const Navbar = () => {
+const MyNavbar = () => {
   return (
-    <nav className="bg-gray-800 py-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white font-bold text-xl">Your Name</Link>
-        <div>
-          <Link to="/" className="text-gray-300 mx-2 hover:text-white">Home</Link>
-          <Link to="/projects" className="text-gray-300 mx-2 hover:text-white">Projects</Link>
-          <Link to="/about" className="text-gray-300 mx-2 hover:text-white">About</Link>
-          <Link to="/contact" className="text-gray-300 mx-2 hover:text-white">Contact</Link>
-        </div>
-      </div>
-    </nav>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Container>
+        <Navbar.Brand as={Link} to="/">Your Name</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default MyNavbar;

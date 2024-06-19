@@ -2,6 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import ProjectCard from '../components/ProjectCard';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const projects = [
   {
@@ -20,14 +21,16 @@ const projects = [
 const ProjectsPage = () => {
   return (
     <Layout>
-      <div className="container mx-auto mt-12">
-        <h1 className="text-4xl font-bold mb-6">Projects</h1>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <Container className="mt-4">
+        <h1 className="display-4 mb-4">Projects</h1>
+        <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {projects.map((project, index) => (
-            <ProjectCard key={index} title={project.title} description={project.description} imageUrl={project.imageUrl} />
+            <Col key={index}>
+              <ProjectCard title={project.title} description={project.description} imageUrl={project.imageUrl} />
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </Container>
     </Layout>
   );
 };

@@ -1,33 +1,26 @@
-// index.js
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image'; // Import StaticImage for optimized images
 import Layout from '../components/Layout';
-import ProjectCard from '../components/ProjectCard';
-
-const projects = [
-  {
-    title: 'Project 1',
-    description: 'Description of Project 1',
-    imageUrl: 'https://placehold.it/300x200',
-  },
-  {
-    title: 'Project 2',
-    description: 'Description of Project 2',
-    imageUrl: 'https://placehold.it/300x200',
-  },
-  // Add more projects as needed
-];
+import { Container } from 'react-bootstrap';
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="container mx-auto">
-        <h1 className="text-4xl font-bold mt-12 mb-6">Welcome to My Portfolio</h1>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} title={project.title} description={project.description} imageUrl={project.imageUrl} />
-          ))}
-        </div>
-      </div>
+      <Container className="mt-4 text-center">
+        {/* Bigger Header Section */}
+        <header style={{ marginBottom: '2rem' }}>
+          <h1 className="display-4 mb-4 font-weight-bold">Hey, I'm Akil</h1>
+          <div className="rectangular-container">
+            <StaticImage
+              src="C:\Users\ACS\my-portfolio\src\images\shared image (3) - Copy.jpg" // Double backslashes for Windows path
+              alt="Akil's photo"
+              placeholder="blurred"
+              layout="fullWidth" // Use fullWidth layout to display image in its original size
+              className="img-fluid rounded" // Bootstrap class for responsive image and rounded corners
+            />
+          </div>
+        </header>
+      </Container>
     </Layout>
   );
 };
