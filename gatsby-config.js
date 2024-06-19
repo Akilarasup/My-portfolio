@@ -15,6 +15,12 @@ module.exports = {
         path: `${__dirname}/src/images`, // Path to your image directory
       },
     },
+    {
+      resolve: 'gatsby-adapter-netlify', // Add gatsby-adapter-netlify plugin
+      options: {
+        // Optionally configure options here if needed
+      },
+    },
     // Add more plugins as needed
   ],
 };

@@ -12,7 +12,7 @@ const IndexPage = () => {
           <h1 className="display-4 mb-4 font-weight-bold">Hey, I'm Akil</h1>
           <div className="rectangular-container">
             <StaticImage
-              src="..\images\akil.jpg" // Double backslashes for Windows path
+              src='../images/akil.jpg' // Double backslashes for Windows path
               alt="Akil's photo"
               placeholder="blurred"
               layout="fullWidth" // Use fullWidth layout to display image in its original size
