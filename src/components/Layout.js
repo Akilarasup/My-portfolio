@@ -1,3 +1,4 @@
+// layout.js
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
@@ -5,7 +6,7 @@ import { Container } from 'react-bootstrap';
 
 const Layout = ({ children }) => {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column min-vh-100" style={{ backgroundColor: '#ffffff' }}>
       <Header />
       <main className="main-content flex-grow-1">
         <style>
@@ -17,7 +18,7 @@ const Layout = ({ children }) => {
               margin: 0;
               padding: 0;
               box-sizing: border-box;
-              background-color: #f8f9fa; /* Example background color */
+              background-color: #ffffff; /* Pure white background color */
             }
           `}
         </style>

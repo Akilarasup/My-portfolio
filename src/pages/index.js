@@ -23,16 +23,25 @@ const IndexPage = () => {
         <div className="container position-relative py-5 d-flex flex-column align-items-center justify-content-center h-100">
           <h1 className="display-4 fw-bold text-white">Hey, I'm Akil</h1>
           <div className="rectangular-container mt-4">
-            <StaticImage
-              src="../images/akil.jpg" // Path to Akil's photo
-              alt="Akil's photo"
-              placeholder="blurred"
-              layout="fixed"
-              width={300} // Adjust width based on your design needs
-              height={300} // Adjust height based on your design needs
-              className="img-fluid rounded-circle shadow-lg custom-image image-medium"
-              style={{ objectFit: 'cover' }} // Ensure the image covers the container
-            />
+            <div
+              className="d-inline-block"
+              style={{
+                padding: '8px', // Adjust padding to control border width
+                borderRadius: '50%',
+                background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #e6683c)'
+              }}
+            >
+              <StaticImage
+                src="../images/akil.jpg" // Path to Akil's photo
+                alt="Akil's photo"
+                placeholder="blurred"
+                layout="fixed"
+                width={300} // Adjust width based on your design needs
+                height={300} // Adjust height based on your design needs
+                className="img-fluid rounded-circle shadow-lg"
+                style={{ objectFit: 'cover' }} // Ensure the image covers the container
+              />
+            </div>
           </div>
         </div>
       </div>
