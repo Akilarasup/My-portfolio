@@ -28,12 +28,12 @@ const projects = [
   },
   {
     title: 'AdamCox.com Survey',
-    description: '"Sustainion" focuses on sustainability initiatives within communities, aiming to promote environmental consciousness and responsible living.',
+    description: 'The diagnostic test serves as an organizational tool, assessing entrepreneurial mindsets through a series of insightful questions. Tailored for teams and companies, it aims to gauge strategic thinking, risk tolerance, and innovation potential, providing valuable insights into collective entrepreneurial strengths and areas for development within organizational contexts.',
     imageUrl: adamcoxImg,
   },
   {
     title: 'Astarprep',
-    description: '"Sustainion" focuses on sustainability initiatives within communities, aiming to promote environmental consciousness and responsible living.',
+    description: "AStarPrep is an educational platform offering tailored dashboards for students and staff. Students access subject materials, exams, and performance analytics, with payment through Stripe. Staff manage student details and performance. AI feedback enhances learning in 'exam' and 'instant' modes, ensuring personalized and effective education.",
     imageUrl: astarprepImg,
   }
   // Add more projects as needed
