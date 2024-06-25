@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
             }
           `}
         </style>
-        <Container fluid className="mt-4">
+        <Container fluid className="">
           {children}
         </Container>
       </main>
