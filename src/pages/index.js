@@ -28,8 +28,8 @@ const IndexPage = () => {
               alt="Akil's photo"
               placeholder="blurred"
               layout="fixed"
-              width={200} // Adjust width based on your design needs
-              height={200} // Adjust height based on your design needs
+              width={300} // Adjust width based on your design needs
+              height={300} // Adjust height based on your design needs
               className="img-fluid rounded-circle shadow-lg custom-image image-medium"
               style={{ objectFit: 'cover' }} // Ensure the image covers the container
             />
