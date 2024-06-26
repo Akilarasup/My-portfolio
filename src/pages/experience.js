@@ -25,7 +25,7 @@ const ExperiencePage = () => {
     },
     {
       title: 'EntrepreneurMindset Survey',
-      description: "The diagnostic test is a self-diagnosis quiz designed to assess your entrepreneurial mindset through insightful questions.",
+      description: "The diagnostic test is a self-diagnosis quiz designed to assess your entrepreneurial mindset through insightful questions, offering comprehensive insights into your strengths, weaknesses, and areas for improvement in just a few minutes of your time.",
       imageUrl: entrepreneurImg,
     },
     {
@@ -78,7 +78,7 @@ const ExperiencePage = () => {
         {/* Projects section */}
         <div>
           <h1>Projects Worked</h1>
-          <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style={{ marginTop: 'calc(var(--bs-gutter-y) * -0.50)' }}>
             {projects.map((project, index) => (
               <Col key={index}>
                 <ProjectCard title={project.title} description={project.description} imageUrl={project.imageUrl} />
