@@ -27,12 +27,7 @@ const ContactPage = () => {
             <Button variant="light" style={styles.contactButton}>
               <FaLinkedin style={styles.icon} /> <a href="https://www.linkedin.com/in/akilarasu-p-b64803257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </Button>
-
-            {/* X (Replaced Twitter) */}
-            <Button variant="light" style={styles.contactButton}>
-              X <a href="https://x.com/ak_akil_06?t=Y3hEls09QyYOKghE9SlnCQ&s=09" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </Button>
-
+            
             {/* Facebook */}
             <Button variant="light" style={styles.contactButton}>
               <FaFacebook style={styles.icon} /> <a href="https://www.facebook.com/akil.arasu.7161?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">Facebook</a>
