@@ -6,7 +6,7 @@ import { FaEnvelope, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'
 const ContactPage = () => {
   return (
     <Layout>
-      <Container className="mt-4 text-center" style={{ marginTop: '15rem', paddingTop: '15rem' }}>
+      <Container className="mt-4 text-center" style={{ marginTop: '10rem', paddingTop: '10rem', marginBottom: '10rem', paddingBottom: '10rem' }}>
         <div>
           <h1 className="display-4 mb-4">Get in Touch</h1>
           <h2 className="mb-4">Contact Me</h2>
