@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
             }
           `}
         </style>
-        <Container fluid className="">
+        <Container fluid className="" style={{ paddingLeft: 0, paddingRight: 0 }}>
           {children}
         </Container>
       </main>

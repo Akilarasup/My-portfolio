@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 const Header = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="header py-3">
+    <Navbar bg="dark" variant="dark" expand="lg" className="header py-3" style={{ paddingLeft: '1rem' }}>
       <Container fluid>
         <Navbar.Brand as={Link} to="/">Akilarasu P</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
