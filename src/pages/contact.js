@@ -1,18 +1,18 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { Container, Button } from 'react-bootstrap';
-import { FaEnvelope, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'; // Removed FaTwitter
+import { FaEnvelope, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
     <Layout>
-      <Container className="d-flex flex-column justify-content-center align-items-center" style={{ height: '100vh' }}>
-        <div className="text-center">
+      <Container className="mt-4 text-center" style={{ marginTop: '15rem', paddingTop: '15rem' }}>
+        <div>
           <h1 className="display-4 mb-4">Get in Touch</h1>
           <h2 className="mb-4">Contact Me</h2>
 
           {/* Social Media Buttons */}
-          <div className="mt-auto">
+          <div>
             {/* Email */}
             <Button variant="light" style={styles.contactButton}>
               <FaEnvelope style={styles.icon} /> <a href="mailto:akilarasup2000@gmail.com">Email</a>
@@ -39,7 +39,6 @@ const ContactPage = () => {
   );
 };
 
-// Inline styles (unchanged)
 const styles = {
   contactButton: {
     border: '1px solid #333',
