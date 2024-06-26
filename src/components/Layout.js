@@ -11,14 +11,19 @@ const Layout = ({ children }) => {
       <main className="main-content flex-grow-1">
         <style>
           {`
-            @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
             body {
-              font-family: 'Arimo', sans-serif;
+              font-family: 'Nunito', sans-serif;
               margin: 0;
               padding: 0;
               box-sizing: border-box;
               background-color: #ffffff; /* Pure white background color */
+            }
+
+            .header, .footer {
+              font-family: 'Roboto', sans-serif;
             }
           `}
         </style>

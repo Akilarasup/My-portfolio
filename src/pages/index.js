@@ -21,7 +21,7 @@ const IndexPage = () => {
         }}
       >
         <div className="container position-relative py-5 d-flex flex-column align-items-center justify-content-center h-100">
-          <h1 className="display-4 fw-bold text-white">Hey, I'm Akil</h1>
+          <h1 className="display-4 fw-bold text-white">Hello, I'm Akil</h1>
           <div className="rectangular-container mt-4">
             <div
               className="d-inline-block"
