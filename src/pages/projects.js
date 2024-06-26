@@ -42,7 +42,7 @@ const projects = [
 const ProjectsPage = () => {
   return (
     <Layout>
-      <Container className="mt-4">
+      <Container className="mt-4" style={{ marginLeft: '5rem' }}>
         <h1 className="display-4 mb-4">Projects Worked</h1>
         <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {projects.map((project, index) => (

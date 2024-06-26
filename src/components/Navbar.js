@@ -15,11 +15,8 @@ const MyNavbar = () => {
             <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            
-            {/* New Navigation Links */}
             <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
             <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
-            <Nav.Link as={Link} to="/work">Work</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 const SkillsPage = () => {
   return (
     <Layout> {/* Use Layout component */}
-      <Container style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+      <Container style={{ marginTop: '2rem', marginBottom: '2rem',marginLeft: '5rem' }}>
         <h1 style={{ marginBottom: '1.5rem' }}>Skills</h1>
         <ul style={{ listStyle: 'none', padding: 0 }}>
           <li style={{ marginBottom: '1.5rem' }}>

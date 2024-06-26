@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 const AboutPage = () => {
   return (
     <Layout>
-      <Container className="mt-4">
+      <Container className="mt-4" style={{ marginLeft: '5rem' }}>
         <h1 className="display-4 mb-4">About Me</h1>
         <p className="lead mb-4">
           I am an experienced Business Analyst with a robust background in project management, specializing in delivering high-quality software projects within stringent timelines and budgets. With a keen aptitude for wireframing, business process mapping, and meticulous software documentation, I excel in transforming intricate requirements into tangible, effective solutions. My proactive approach ensures that projects not only meet but exceed objectives, consistently driving measurable results. Leveraging strong attention to detail and exceptional communication abilities, I foster collaborative environments that optimize team performance and stakeholder satisfaction.

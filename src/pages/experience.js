@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 const ExperiencePage = () => {
   return (
     <Layout> {/* Use Layout component */}
-      <Container className="mt-4">
+      <Container className="mt-4" style={{ marginLeft: '5rem' }}>
         <h1>Experience</h1>
         <ul className="list-unstyled">
           {/* Business Analyst - Full-time */}
