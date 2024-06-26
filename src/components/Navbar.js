@@ -15,6 +15,7 @@ const MyNavbar = () => {
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
             <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
+            {/* Update the href to point to your resume.pdf in the static folder */}
             <Nav.Link href="/resume.pdf" download>Download CV</Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -9,12 +9,13 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/">Akilarasu P</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav>
+          <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="nav-link me-3">Home</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-link me-3">About</Nav.Link>
             <Nav.Link as={Link} to="/skills" className="nav-link me-3">Skills</Nav.Link>
             <Nav.Link as={Link} to="/experience" className="nav-link me-3">Experience</Nav.Link>
             <Nav.Link as={Link} to="/contact" className="nav-link me-3">Contact</Nav.Link>
+            {/* Update the href to point to your resume.pdf in the static folder */}
             <Nav.Link href="/resume.pdf" className="nav-link me-3" download>Download CV</Nav.Link>
           </Nav>
         </Navbar.Collapse>
