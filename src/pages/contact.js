@@ -25,7 +25,7 @@ const ContactPage = () => {
 
             {/* LinkedIn */}
             <Button variant="light" style={styles.contactButton}>
-              <FaLinkedin style={styles.icon} /> <a href="https://www.linkedin.com/in/akilarasu-p-b64803257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <FaLinkedin style={styles.icon} /> <a href="https://www.linkedin.com/in/akilarasu-p-b64803257/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </Button>
             
             {/* Facebook */}
