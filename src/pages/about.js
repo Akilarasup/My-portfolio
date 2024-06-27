@@ -1,19 +1,54 @@
-// about.js
 import React from 'react';
 import Layout from '../components/Layout';
 import { Container } from 'react-bootstrap';
+import akilImage from '../images/akil-aboutme.jpg'; // Import the image
 
 const AboutPage = () => {
   return (
     <Layout>
       <Container className="mt-4" style={{ marginLeft: '5rem' }}>
-        <h1 className="display-4 mb-4" style={{ fontSize: '2.5rem' }}>About Me</h1>
-        <p className="lead mb-4">
-          I am an experienced Business Analyst with a robust background in project management, specializing in delivering high-quality software projects within stringent timelines and budgets. With a keen aptitude for wireframing, business process mapping, and meticulous software documentation, I excel in transforming intricate requirements into tangible, effective solutions. My proactive approach ensures that projects not only meet but exceed objectives, consistently driving measurable results. Leveraging strong attention to detail and exceptional communication abilities, I foster collaborative environments that optimize team performance and stakeholder satisfaction.
-        </p>
-        <p className="lead mb-4">
-          Driven by a passion for innovation and problem-solving, I thrive in dynamic environments where complex challenges require strategic thinking and agile execution. My analytical mindset allows me to identify opportunities for process improvement and efficiency gains, contributing to streamlined workflows and enhanced project outcomes. I am adept at synthesizing data-driven insights to inform decision-making and adapt quickly to evolving project requirements. Committed to continuous learning, I stay abreast of industry trends and best practices, ensuring that my solutions are not only current but also future-proofed. With a collaborative approach and a commitment to excellence, I am dedicated to delivering value and driving success in every project I undertake.
-        </p>
+        <div className="d-flex flex-column justify-content-between gap-4 gap-md-5 flex-md-row">
+          <div className="d-flex justify-content-center order-md-first justify-content-md-end">
+            <img
+              alt="Portrait of Akil"
+              loading="lazy"
+              width="280px" // Adjusted width based on your styling
+              height="360px" // Adjusted height based on your styling
+              decoding="async"
+              className="position-relative z-index-1"
+              style={{ height: '600px', width: '350px', border: '8px solid #f8f9fa', objectFit: 'cover' }}
+              src={akilImage} // Use the imported image variable
+            />
+          </div>
+          <div className="d-flex flex-column gap-3 max-w-xl">
+            <h3 className="text-dark" style={{ fontSize: '2.5rem', fontWeight: 500 }}>About Me</h3>
+            <p className="text-muted">
+              I am a driven business analyst with a robust background in project management, specializing in delivering high-quality software projects within stringent timelines and budgets. My journey into business analysis began in 2022, and since then, I have immersed myself in mastering tools like Figma for streamlined UI/UX design and exploring cloud solutions such as AWS to enhance operational scalability.
+            </p>
+            <p className="text-muted">
+              With a background in Electrical Engineering, I bring a unique perspective to analyzing complex business processes and identifying opportunities for improvement. My passion for learning extends to cutting-edge technologies like artificial intelligence, which I am integrating into my analytical toolkit to drive data-driven decisions.
+            </p>
+            <p className="text-muted">
+              Outside of analyzing business requirements and developing comprehensive strategies, I am an avid learner, constantly expanding my skills in agile methodologies and predictive analytics. I am deeply interested in the intersection of technology and business, actively engaging in forums and online communities to stay abreast of industry trends and best practices.
+            </p>
+            <p className="text-muted">
+              Finally, some quick bits about me:
+            </p>
+            <div className="d-flex flex-column gap-2 gap-md-3 flex-md-row">
+              <ul className="list-unstyled">
+                <li className="text-muted">&#8226; B.E. in Electrical Engineering</li>
+                <li className="text-muted">&#8226; Avid learner</li>
+              </ul>
+              <ul className="list-unstyled">
+                <li className="text-muted">&#8226; Full time Business Analyst</li>
+                <li className="text-muted">&#8226; Data-driven problem solver</li>
+              </ul>
+            </div>
+            <p className="text-muted">
+              Let's connect on <a href="https://www.linkedin.com/in/akilarasu-p-b64803257/" target="_blank" rel="noopener noreferrer">LinkedIn</a> to explore how I can contribute to your organization's success through strategic business analysis and innovative solutions. I look forward to connecting with you!
+            </p>
+          </div>
+        </div>
       </Container>
     </Layout>
   );
