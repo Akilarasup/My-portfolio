@@ -2,26 +2,23 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { Container } from 'react-bootstrap';
 import akilImage from '../images/akil-aboutme.jpg'; // Import the image
+import './about.css'; // Import the CSS file for specific styles
 
 const AboutPage = () => {
   return (
     <Layout>
-      <Container className="mt-4" style={{ marginLeft: '5rem' }}>
-        <div className="d-flex flex-column justify-content-between gap-4 gap-md-5 flex-md-row">
-          <div className="d-flex justify-content-center order-md-first justify-content-md-end">
+      <Container className="about-container mt-4">
+        <div className="about-content d-flex flex-column justify-content-between gap-4 gap-md-5 flex-md-row">
+          <div className="about-image-container d-flex justify-content-center order-md-first justify-content-md-end">
             <img
               alt="Portrait of Akil"
               loading="lazy"
-              width="280px" // Adjusted width based on your styling
-              height="360px" // Adjusted height based on your styling
-              decoding="async"
-              className="position-relative z-index-1"
-              style={{ height: '600px', width: '350px', border: '8px solid #f8f9fa', objectFit: 'cover' }}
+              className="about-image"
               src={akilImage} // Use the imported image variable
             />
           </div>
-          <div className="d-flex flex-column gap-3 max-w-xl">
-            <h3 className="text-dark" style={{ fontSize: '2.5rem', fontWeight: 500 }}>About Me</h3>
+          <div className="about-text d-flex flex-column gap-3 max-w-xl">
+            <h3 className="text-dark about-title">About Me</h3>
             <p className="text-muted">
               I am a driven business analyst with a robust background in project management, specializing in delivering high-quality software projects within stringent timelines and budgets. My journey into business analysis began in 2022, and since then, I have immersed myself in mastering tools like Figma for streamlined UI/UX design and exploring cloud solutions such as AWS to enhance operational scalability.
             </p>

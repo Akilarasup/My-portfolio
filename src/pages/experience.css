@@ -1,0 +1,20 @@
+.experience-container {
+  margin-left: 5rem;
+}
+
+.experience-section h1,
+.projects-section h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.projects-section .row-cols-1 > * {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}

@@ -10,6 +10,8 @@ import sustainionImg from '../images/sustainion-img.jpg';
 import entrepreneurImg from '../images/entreprenuer-img.jpg';
 import astarprepImg from '../images/astarprep-img.webp';
 
+import './experience.css'; // Import the CSS file for specific styles
+
 const ExperiencePage = () => {
   // Define project data
   const projects = [
@@ -42,9 +44,9 @@ const ExperiencePage = () => {
 
   return (
     <Layout>
-      <Container className="mt-4" style={{ marginLeft: '5rem' }}>
+      <Container className="experience-container mt-4">
         {/* Experience section */}
-        <div className="mb-5">
+        <div className="experience-section mb-5">
           <h1>Experience</h1>
           <ul className="list-unstyled">
             {/* Business Analyst - Full-time */}
@@ -76,7 +78,7 @@ const ExperiencePage = () => {
         </div>
 
         {/* Projects section */}
-        <div>
+        <div className="projects-section">
           <h1>Projects Worked</h1>
           <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style={{ marginTop: 'calc(var(--bs-gutter-y) * -0.50)' }}>
             {projects.map((project, index) => (

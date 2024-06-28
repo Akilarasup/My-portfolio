@@ -1,0 +1,33 @@
+.header {
+    padding-left: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    color: #ffffff; /* White text color */
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa; /* Light grey text color on hover */
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding-left: 0;
+    }
+  
+    .navbar-brand {
+      font-size: 1.3rem;
+      margin-right: 1rem;
+    }
+  
+    .nav-link {
+      font-size: 0.9rem;
+      margin-right: 1rem;
+    }
+  }
+  
