@@ -9,15 +9,7 @@ const AboutPage = () => {
     <Layout>
       <Container className="about-container mt-4">
         <div className="about-content d-flex flex-column justify-content-between gap-4 gap-md-5 flex-md-row">
-          <div className="about-image-container d-flex justify-content-center order-md-first justify-content-md-end">
-            <img
-              alt="Portrait of Akil"
-              loading="lazy"
-              className="about-image"
-              src={akilImage} // Use the imported image variable
-            />
-          </div>
-          <div className="about-text d-flex flex-column gap-3 max-w-xl">
+          <div className="about-text d-flex flex-column gap-3 max-w-xl order-md-first">
             <h3 className="text-dark about-title">About Me</h3>
             <p className="text-muted">
               I am a driven business analyst with a robust background in project management, specializing in delivering high-quality software projects within stringent timelines and budgets. My journey into business analysis began in 2022, and since then, I have immersed myself in mastering tools like Figma for streamlined UI/UX design and exploring cloud solutions such as AWS to enhance operational scalability.
@@ -44,6 +36,14 @@ const AboutPage = () => {
             <p className="text-muted">
               Let's connect on <a href="https://www.linkedin.com/in/akilarasu-p-b64803257/" target="_blank" rel="noopener noreferrer">LinkedIn</a> to explore how I can contribute to your organization's success through strategic business analysis and innovative solutions. I look forward to connecting with you!
             </p>
+          </div>
+          <div className="about-image-container d-flex justify-content-center justify-content-md-end">
+            <img
+              alt="Portrait of Akil"
+              loading="lazy"
+              className="about-image"
+              src={akilImage} // Use the imported image variable
+            />
           </div>
         </div>
       </Container>
