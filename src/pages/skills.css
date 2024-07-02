@@ -2,31 +2,31 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 2rem 0;
-  text-align: center;
+  text-align: center; /* Center align the content */
 }
 
 .custom-skills-heading {
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  font-weight: 600; /* Corrected font weight */
+  font-weight: 2.5rem;
   color: #333; /* Dark color for heading */
 }
 
 .custom-skills-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  gap: 2rem; /* Increased space between grid items */
   list-style: none;
   padding: 0;
-  justify-content: center;
+  justify-content: center; /* Center align the grid items */
 }
 
 .custom-skill-item {
   padding: 1.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /* Lighter border */
   border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -34,8 +34,8 @@
 }
 
 .custom-skill-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); /* Lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 .skill-header {
@@ -53,7 +53,7 @@
 
 .skill-description {
   margin-top: 1rem;
-  text-align: left;
+  text-align: left; /* Align description text left */
   display: none;
 }
 
@@ -71,8 +71,8 @@
   }
 
   .custom-skills-list {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    gap: 1.5rem; /* Adjusted gap for smaller screens */
   }
 
   .custom-skill-item {
