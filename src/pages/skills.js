@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import { Container, Button } from 'react-bootstrap'; // Assuming Button component is imported from react-bootstrap
-import './skills.css'; // Import external CSS file for styles
+import './SkillsPage.css'; // Import external CSS file for styles
 
 const skillsData = [
   {
