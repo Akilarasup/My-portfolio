@@ -1,48 +1,60 @@
+/* index.css */
+
 .hero-section {
-    height: 100vh; /* Ensure hero section covers full viewport height */
-    width: 100%; /* Ensure full width of viewport */
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/pexels-photo-2680270.webp'); /* Set background image */
-    background-size: cover; /* Cover entire div with image */
-    background-position: center; /* Center align the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-  }
-  
-  .hero-section .container {
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .hero-section h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: white;
-  }
-  
-  .rectangular-container {
-    margin-top: 2rem;
-  }
-  
-  .photo-container {
-    padding: 8px; /* Adjust padding to control border width */
-    border-radius: 50%;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #e6683c);
-  }
-  
-  @media (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 1.8rem;
-    }
-  
-    .rectangular-container {
-      margin-top: 1rem;
-    }
-  }
-  
+  height: 100vh; /* Ensure hero section covers full viewport height */
+  width: 100%; /* Ensure full width of viewport */
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/pexels-photo-2680270.webp'); /* Set background image */
+  background-size: cover; /* Cover entire div with image */
+  background-position: center; /* Center align the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative; /* Ensure positioning context for absolute positioning */
+  overflow: hidden; /* Hide overflow to ensure no scrollbars */
+}
+
+.hero-section .container {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center; /* Center align content */
+  color: white; /* White text color */
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-section .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #4CAF50; /* Green */
+  color: white; /* White text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Circular image */
+.circular-image {
+  width: 150px; /* Adjust size based on your design */
+  height: 150px; /* Adjust size based on your design */
+  border-radius: 50%; /* Create circular shape */
+  overflow: hidden; /* Ensure image does not overflow */
+  border: 5px solid #fff; /* White border around the circle */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
