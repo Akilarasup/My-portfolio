@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Layout from '../components/Layout';
-import { Container, Button } from 'react-bootstrap'; // Assuming Button component is imported from react-bootstrap
+import { Container, Button } from 'react-bootstrap';
 import './SkillsPage.css'; // Import external CSS file for styles
 
 const skillsData = [
@@ -54,35 +53,33 @@ const SkillsPage = () => {
   };
 
   return (
-    <Layout>
-      <Container className="custom-skills-container">
-        <h1 className="custom-skills-heading">Skills</h1>
-        <ul className="custom-skills-list">
-          {skillsData.map((skill, index) => (
-            <li key={index} className="custom-skill-item">
-              <div className="skill-header">
-                <h3 className="custom-skill-title">{skill.title}</h3>
-                <Button
-                  variant="outline-primary"
-                  size="sm"
-                  onClick={() => toggleSkillDescription(index)}
-                  aria-controls={`description-${index}`}
-                  aria-expanded={expandedSkill === index}
-                >
-                  {expandedSkill === index ? '-' : '+'}
-                </Button>
-              </div>
-              <div
-                id={`description-${index}`}
-                className={`skill-description ${expandedSkill === index ? 'expanded' : 'collapsed'}`}
+    <Container className="custom-skills-container">
+      <h1 className="custom-skills-heading">Skills</h1>
+      <ul className="custom-skills-list">
+        {skillsData.map((skill, index) => (
+          <li key={index} className="custom-skill-item">
+            <div className="skill-header">
+              <h3 className="custom-skill-title">{skill.title}</h3>
+              <Button
+                variant="outline-primary"
+                size="sm"
+                onClick={() => toggleSkillDescription(index)}
+                aria-controls={`description-${index}`}
+                aria-expanded={expandedSkill === index}
               >
-                <p>{skill.description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </Container>
-    </Layout>
+                {expandedSkill === index ? '-' : '+'}
+              </Button>
+            </div>
+            <div
+              id={`description-${index}`}
+              className={`skill-description ${expandedSkill === index ? 'expanded' : 'collapsed'}`}
+            >
+              <p>{skill.description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </Container>
   );
 };
 

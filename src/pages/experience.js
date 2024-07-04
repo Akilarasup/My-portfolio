@@ -1,7 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout'; // Import Layout component
-import ProjectCard from '../components/ProjectCard'; // Import ProjectCard component
 import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from '../components/ProjectCard'; // Import ProjectCard component
 
 // Import local images for projects
 import pathwayImg from '../images/pathway-img.jpg';
@@ -43,53 +42,51 @@ const ExperiencePage = () => {
   ];
 
   return (
-    <Layout>
-      <Container className="experience-container mt-4">
-        {/* Experience section */}
-        <div className="experience-section mb-5">
-          <h1>Experience</h1>
-          <ul className="list-unstyled">
-            {/* Business Analyst - Full-time */}
-            <li className="mb-4">
-              <h3>Business Analyst - Agile Cyber Solutions</h3>
-              <p><strong>Full-time</strong></p>
-              <p>August 2022 - Present (1 year, 11 months)</p>
-              <p>Responsibilities:</p>
-              <ul className="ms-3">
-                <li>Worked with Agile methodologies.</li>
-                <li>Utilized Microsoft Excel for data analysis and reporting.</li>
-                <li>Demonstrated strong analytical skills in business analysis and software testing.</li>
-                <li>Managed projects effectively, ensuring successful outcomes.</li>
-              </ul>
-            </li>
-            {/* Business Analyst - Apprenticeship */}
-            <li className="mb-4">
-              <h3>Business Analyst - Agile Cyber Solutions</h3>
-              <p><strong>Apprenticeship</strong></p>
-              <p>May 2022 - July 2022 (3 months)</p>
-              <p>Responsibilities:</p>
-              <ul className="ms-3">
-                <li>Acquired hands-on experience in business analysis processes.</li>
-                <li>Assisted in project management tasks and software testing.</li>
-                <li>Gained proficiency in Agile methodologies and project coordination.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <Container className="experience-container mt-4">
+      {/* Experience section */}
+      <div className="experience-section mb-5">
+        <h1>Experience</h1>
+        <ul className="list-unstyled">
+          {/* Business Analyst - Full-time */}
+          <li className="mb-4">
+            <h3>Business Analyst - Agile Cyber Solutions</h3>
+            <p><strong>Full-time</strong></p>
+            <p>August 2022 - Present (1 year, 11 months)</p>
+            <p>Responsibilities:</p>
+            <ul className="ms-3">
+              <li>Worked with Agile methodologies.</li>
+              <li>Utilized Microsoft Excel for data analysis and reporting.</li>
+              <li>Demonstrated strong analytical skills in business analysis and software testing.</li>
+              <li>Managed projects effectively, ensuring successful outcomes.</li>
+            </ul>
+          </li>
+          {/* Business Analyst - Apprenticeship */}
+          <li className="mb-4">
+            <h3>Business Analyst - Agile Cyber Solutions</h3>
+            <p><strong>Apprenticeship</strong></p>
+            <p>May 2022 - July 2022 (3 months)</p>
+            <p>Responsibilities:</p>
+            <ul className="ms-3">
+              <li>Acquired hands-on experience in business analysis processes.</li>
+              <li>Assisted in project management tasks and software testing.</li>
+              <li>Gained proficiency in Agile methodologies and project coordination.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-        {/* Projects section */}
-        <div className="projects-section">
-          <h1>Projects Worked</h1>
-          <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style={{ marginTop: 'calc(var(--bs-gutter-y) * -0.50)' }}>
-            {projects.map((project, index) => (
-              <Col key={index}>
-                <ProjectCard title={project.title} description={project.description} imageUrl={project.imageUrl} />
-              </Col>
-            ))}
-          </Row>
-        </div>
-      </Container>
-    </Layout>
+      {/* Projects section */}
+      <div className="projects-section">
+        <h1>Projects Worked</h1>
+        <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style={{ marginTop: 'calc(var(--bs-gutter-y) * -0.50)' }}>
+          {projects.map((project, index) => (
+            <Col key={index}>
+              <ProjectCard title={project.title} description={project.description} imageUrl={project.imageUrl} />
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </Container>
   );
 };
 
