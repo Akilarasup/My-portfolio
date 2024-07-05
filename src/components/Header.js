@@ -17,7 +17,6 @@ const Header = () => {
             <Nav.Link as={ScrollLink} to="skills" smooth={true} duration={500} className="nav-link me-lg-3">Skills</Nav.Link>
             <Nav.Link as={ScrollLink} to="experience" smooth={true} duration={500} className="nav-link me-lg-3">Experience</Nav.Link>
             <Nav.Link as={ScrollLink} to="contact" smooth={true} duration={500} className="nav-link me-lg-3">Contact</Nav.Link>
-            {/* Update the href to point to your resume.pdf in the static folder */}
             <Nav.Link href="/resume.pdf" className="nav-link me-lg-3" download>Download CV</Nav.Link>
           </Nav>
         </Navbar.Collapse>
