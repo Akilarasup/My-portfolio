@@ -1,5 +1,5 @@
 .about-container {
-  padding: 0 15px;
+  padding: 80px 15px 0; /* Add top padding to account for the sticky header */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 768px) {
+  .about-container {
+    padding: 60px 10px 0; /* Adjust top padding for smaller screens */
+  }
+
   .about-content {
     margin-right: 0; /* Resetting margin for smaller screens */
     padding: 0 10px;
