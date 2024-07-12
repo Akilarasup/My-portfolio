@@ -14,8 +14,8 @@ const Header = () => {
           <Nav className="ms-auto">
             <Nav.Link as={ScrollLink} to="hero" smooth={true} duration={500} className="nav-link me-lg-3">Home</Nav.Link>
             <Nav.Link as={ScrollLink} to="about" smooth={true} duration={500} className="nav-link me-lg-3">About</Nav.Link>
-            <Nav.Link as={ScrollLink} to="skills" smooth={true} duration={500} className="nav-link me-lg-3">Skills</Nav.Link>
             <Nav.Link as={ScrollLink} to="experience" smooth={true} duration={500} className="nav-link me-lg-3">Experience</Nav.Link>
+            <Nav.Link as={ScrollLink} to="skills" smooth={true} duration={500} className="nav-link me-lg-3">Skills</Nav.Link>
             <Nav.Link as={ScrollLink} to="contact" smooth={true} duration={500} className="nav-link me-lg-3">Contact</Nav.Link>
             <Nav.Link href="/resume.pdf" className="nav-link me-lg-3" download>Download CV</Nav.Link>
           </Nav>

@@ -1,21 +1,38 @@
 .about-container {
   padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure full viewport height */
 }
 
 .about-content {
   margin-right: 5rem; /* Adjusting margin to the right */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Adjust vertical gap between elements */
+  max-width: 800px; /* Limit content width */
+}
+
+.about-image-container {
+  width: 100%;
+  max-width: 600px; /* Limit image container width */
+  margin-top: 2rem; /* Add margin for spacing */
 }
 
 .about-image-container img {
   width: 100%;
-  max-width: 1400px;
   height: auto;
   object-fit: cover;
+  border-radius: 8px; /* Optional: Add border radius to image */
 }
 
 .about-title {
   font-size: 2.5rem;
   font-weight: 500;
+  margin-bottom: 1rem; /* Add margin bottom for spacing */
+  text-align: center; /* Center align title */
 }
 
 @media (max-width: 768px) {
@@ -25,7 +42,8 @@
   }
 
   .about-image-container {
-    justify-content: center;
+    max-width: 100%; /* Full width for smaller screens */
+    margin-top: 1rem; /* Adjust margin for smaller screens */
   }
 
   .about-title {

@@ -1,33 +1,53 @@
+/* Header.css */
+
 .header {
-    padding-left: 1rem;
+  padding-left: 1rem;
+  position: fixed; /* Ensure the header remains fixed */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Align with the left edge */
+  width: 100%; /* Take up full width */
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: #343a40; /* Dark background color */
+  transition: all 0.3s ease; /* Optional: Add transition for smooth effect */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff; /* White text color */
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #ffffff; /* White text color */
+  margin-right: 1rem; /* Adjust spacing between links */
+}
+
+.nav-link:hover {
+  color: #f8f9fa; /* Light grey text color on hover */
+}
+
+/* Apply padding to sections to adjust for fixed header */
+.section-padding {
+  padding-top: 80px; /* Adjust based on your header height */
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding-left: 0;
   }
-  
+
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
   }
-  
+
   .nav-link {
-    font-size: 1rem;
-    color: #ffffff; /* White text color */
+    font-size: 0.9rem;
+    margin-right: 1rem;
   }
-  
-  .nav-link:hover {
-    color: #f8f9fa; /* Light grey text color on hover */
+
+  /* Adjust padding for smaller screens */
+  .section-padding {
+    padding-top: 60px; /* Adjust based on your header height for smaller screens */
   }
-  
-  @media (max-width: 991px) {
-    .header {
-      padding-left: 0;
-    }
-  
-    .navbar-brand {
-      font-size: 1.3rem;
-      margin-right: 1rem;
-    }
-  
-    .nav-link {
-      font-size: 0.9rem;
-      margin-right: 1rem;
-    }
-  }
-  
+}

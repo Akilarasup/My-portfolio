@@ -1,20 +1,36 @@
 .experience-container {
-  margin-left: 5rem;
+  min-height: 100vh; /* Ensure each section takes the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  padding: 2rem 1rem; /* Add padding for better spacing */
 }
 
-.experience-section h1,
-.projects-section h1 {
+.experience-section, .projects-section {
+  max-width: 1200px; /* Limit the width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.experience-section h1, .projects-section h1 {
   font-size: 2.5rem;
-  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center the section titles */
 }
 
-.projects-section .row-cols-1 > * {
-  margin-top: 1rem;
+.experience-section ul, .projects-section .row {
+  padding-left: 0; /* Remove left padding from lists */
 }
 
-@media (max-width: 768px) {
-  .experience-container {
-    margin-left: 0;
-    padding: 0 10px;
+.experience-section ul li {
+  margin-bottom: 2rem; /* Add space between list items */
+}
+
+@media (min-width: 768px) {
+  .experience-section h1, .projects-section h1 {
+    font-size: 3rem;
+  }
+
+  .experience-section ul li {
+    margin-bottom: 2.5rem;
   }
 }
