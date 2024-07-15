@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link as GatsbyLink } from 'gatsby';
 import { Link as ScrollLink } from 'react-scroll';
+import { FaDownload } from 'react-icons/fa'; // Import the download icon from react-icons
 import './Header.css'; // Import external CSS file for styles
 
 const Header = () => {
@@ -17,7 +18,9 @@ const Header = () => {
             <Nav.Link as={ScrollLink} to="experience" smooth={true} duration={500} className="nav-link me-lg-3">Experience</Nav.Link>
             <Nav.Link as={ScrollLink} to="skills" smooth={true} duration={500} className="nav-link me-lg-3">Skills</Nav.Link>
             <Nav.Link as={ScrollLink} to="contact" smooth={true} duration={500} className="nav-link me-lg-3">Contact</Nav.Link>
-            <Nav.Link href="/resume.pdf" className="nav-link me-lg-3" download>Download CV</Nav.Link>
+            <Nav.Link href="/resume.pdf" className="nav-link me-lg-3" download>
+              Resume <FaDownload className="ms-2" /> {/* Add the download icon */}
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
