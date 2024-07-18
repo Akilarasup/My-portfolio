@@ -17,20 +17,64 @@
   text-align: center; /* Center the section titles */
 }
 
-.experience-section ul, .projects-section .row {
-  padding-left: 0; /* Remove left padding from lists */
+.equal-height-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.experience-section ul li {
-  margin-bottom: 2rem; /* Add space between list items */
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.current-experience {
+  border-left: 5px solid #007bff; /* Blue border to indicate current position */
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+.previous-experience {
+  border-left: 5px solid #6c757d; /* Gray border to indicate previous position */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.projects-section .project-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projects-section .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 768px) {
   .experience-section h1, .projects-section h1 {
     font-size: 3rem;
-  }
-
-  .experience-section ul li {
-    margin-bottom: 2.5rem;
   }
 }
