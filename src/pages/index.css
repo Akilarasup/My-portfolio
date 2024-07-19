@@ -3,10 +3,7 @@
   width: 100%; /* Ensure full width of viewport */
   margin: 0;
   padding: 0;
-  background-image: url('../images/pexels-photo-2680270.webp'); /* Set background image */
-  background-size: cover; /* Cover entire div with image */
-  background-position: center; /* Center align the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-color: #D6AE4C; /* Set background color */
   display: flex; /* Use flexbox to center content vertically */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */

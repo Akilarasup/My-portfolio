@@ -5,13 +5,12 @@ import About from './about';
 import Contact from './contact';
 import Experience from './experience';
 import Skills from './skills';
-import heroBackground from '../images/pexels-photo-2680270.webp';
 import './index.css';
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div id="hero" className="hero-section" style={{ backgroundImage: `url(${heroBackground})` }}>
+      <div id="hero" className="hero-section" style={{ backgroundColor: '#D6AE4C' }}>
         <div className="container position-relative py-5">
           <div className="d-flex flex-column align-items-center justify-content-center content-wrapper">
             <StaticImage
