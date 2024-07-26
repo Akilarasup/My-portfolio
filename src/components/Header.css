@@ -20,6 +20,7 @@
   font-size: 1rem;
   color: #ffffff; /* White text color */
   margin-right: 1rem; /* Adjust spacing between links */
+  cursor: pointer; /* Ensure pointer cursor on hover */
 }
 
 .nav-link:hover {
