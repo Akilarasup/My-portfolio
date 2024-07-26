@@ -1,41 +1,58 @@
+/* contact.css */
+
 .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* Ensure full viewport height */
-  padding: 5rem 15px; /* Adjust padding for top and bottom */
+  padding: 5rem 1rem; /* Adjust padding for top and bottom, smaller side padding */
 }
 
 .contact-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 1.5rem; /* Increased gap between buttons */
 }
 
 .contact-button {
-  border: 1px solid #333;
-  border-radius: 20px;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-  display: inline-block;
-  text-align: left;
-  width: auto;
+  border: 1px solid #ddd; /* Light border for better contrast */
+  border-radius: 12px; /* Rounded corners */
+  padding: 0.75rem 1.25rem; /* Increased padding for better button size */
+  margin: 0.5rem; /* Added margin to prevent crowding */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fff; /* White background for buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-button:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 .contact-button a {
-  color: inherit;
+  color: #333; /* Dark text color */
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-  margin-right: 10px;
+  margin-right: 0.75rem; /* Adjusted space between icon and text */
   font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
   .contact-container {
-    padding: 2rem 15px; /* Adjust padding for smaller screens */
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .contact-button {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
   }
 }

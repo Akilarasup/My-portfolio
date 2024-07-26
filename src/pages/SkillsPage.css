@@ -12,21 +12,21 @@
 .custom-skills-heading {
   font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 1rem; /* Add margin bottom for spacing */
+  margin-bottom: 2rem; /* Increased margin bottom for more spacing */
   text-align: center; /* Center align title */
 }
 
 .custom-skills-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-  gap: 2rem; /* Increased space between grid items */
+  gap: 3rem; /* Increased space between grid items */
   list-style: none;
   padding: 0;
   justify-content: center; /* Center align the grid items */
 }
 
 .custom-skill-item {
-  padding: 1.5rem;
+  padding: 2rem;
   border: 1px solid #ddd; /* Lighter border */
   border-radius: 12px;
   background-color: #fff; /* White background */
@@ -46,6 +46,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem; /* Added margin bottom for spacing */
+  gap: 1rem; /* Added gap between title and button */
 }
 
 .custom-skill-title {
@@ -53,6 +55,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #333; /* Dark color for title */
+  flex-grow: 1; /* Make title take available space */
 }
 
 .skill-description {
@@ -68,6 +71,7 @@
 @media (max-width: 1200px) {
   .custom-skills-list {
     grid-template-columns: repeat(2, 1fr); /* 2 columns layout on medium screens */
+    gap: 2rem; /* Adjusted gap for medium screens */
   }
 }
 
@@ -78,6 +82,6 @@
   }
 
   .custom-skill-item {
-    padding: 1.2rem;
+    padding: 1.5rem; /* Adjusted padding for smaller screens */
   }
 }
