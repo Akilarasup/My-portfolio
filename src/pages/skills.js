@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import './SkillsPage.css'; // Import external CSS file for styles
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Add icons for a modern touch
 
 const skillsData = [
   {
@@ -31,25 +32,13 @@ const skillsData = [
     title: 'Figma',
     description: 'Proficient in Figma for UI/UX design, prototyping, and collaboration.'
   },
-  {
-    title: 'AWS',
-    description: 'Familiar with Amazon Web Services (AWS) cloud platform and services.'
-  },
-  {
-    title: 'DevOps',
-    description: 'Understanding of DevOps principles and practices for continuous integration and deployment.'
-  },
 ];
 
 const SkillsPage = () => {
   const [expandedSkill, setExpandedSkill] = useState(null);
 
   const toggleSkillDescription = (index) => {
-    if (expandedSkill === index) {
-      setExpandedSkill(null); // Collapse if already expanded
-    } else {
-      setExpandedSkill(index); // Expand the clicked skill
-    }
+    setExpandedSkill(expandedSkill === index ? null : index);
   };
 
   return (
@@ -57,22 +46,22 @@ const SkillsPage = () => {
       <h1 className="custom-skills-heading">Skills</h1>
       <ul className="custom-skills-list">
         {skillsData.map((skill, index) => (
-          <li key={index} className="custom-skill-item">
+          <li key={index} className={`custom-skill-item ${expandedSkill === index ? 'expanded' : ''}`}>
             <div className="skill-header">
               <h3 className="custom-skill-title">{skill.title}</h3>
               <Button
-                variant="outline-primary"
-                size="sm"
+                variant="link"
+                className="skill-toggle-button"
                 onClick={() => toggleSkillDescription(index)}
                 aria-controls={`description-${index}`}
                 aria-expanded={expandedSkill === index}
               >
-                {expandedSkill === index ? '-' : '+'}
+                {expandedSkill === index ? <FaChevronUp /> : <FaChevronDown />}
               </Button>
             </div>
             <div
               id={`description-${index}`}
-              className={`skill-description ${expandedSkill === index ? 'expanded' : 'collapsed'}`}
+              className={`skill-description ${expandedSkill === index ? 'show' : ''}`}
             >
               <p>{skill.description}</p>
             </div>

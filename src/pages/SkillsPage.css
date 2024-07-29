@@ -1,87 +1,98 @@
 /* SkillsPage.css */
 
 .custom-skills-container {
-  padding: 4rem 0; /* Adjust padding as needed */
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Ensure full viewport height */
+  min-height: 100vh;
 }
 
 .custom-skills-heading {
   font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 2rem; /* Increased margin bottom for more spacing */
-  text-align: center; /* Center align title */
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .custom-skills-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-  gap: 3rem; /* Increased space between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
   list-style: none;
   padding: 0;
-  justify-content: center; /* Center align the grid items */
+  justify-content: center;
 }
 
 .custom-skill-item {
   padding: 2rem;
-  border: 1px solid #ddd; /* Lighter border */
+  border: 1px solid #ddd;
   border-radius: 12px;
-  background-color: #fff; /* White background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .custom-skill-item:hover {
-  transform: translateY(-4px); /* Lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .skill-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem; /* Added margin bottom for spacing */
-  gap: 1rem; /* Added gap between title and button */
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .custom-skill-title {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #333; /* Dark color for title */
-  flex-grow: 1; /* Make title take available space */
+  color: #333;
+  flex-grow: 1;
+}
+
+.skill-toggle-button {
+  font-size: 1.5rem;
+  color: #007bff;
+  border: none;
 }
 
 .skill-description {
   margin-top: 1rem;
-  text-align: left; /* Align description text left */
-  display: none;
+  text-align: left;
+  max-height: 0; /* Collapsed state */
+  overflow: hidden;
+  opacity: 0; /* Collapsed state */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
-.skill-description.expanded {
-  display: block;
+.skill-description.show {
+  max-height: 500px; /* Large enough value to ensure visibility */
+  opacity: 1; /* Expanded state */
 }
 
 @media (max-width: 1200px) {
   .custom-skills-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout on medium screens */
-    gap: 2rem; /* Adjusted gap for medium screens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .custom-skills-list {
-    grid-template-columns: 1fr; /* Single column layout on smaller screens */
-    gap: 1.5rem; /* Adjusted gap for smaller screens */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .custom-skill-item {
-    padding: 1.5rem; /* Adjusted padding for smaller screens */
+    padding: 1.5rem;
   }
 }
